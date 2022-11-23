@@ -27,6 +27,22 @@ from tensorflow_addons.losses.triplet import (
     triplet_hard_loss,
     TripletSemiHardLoss,
     TripletHardLoss,
+    
+)
+
+from .triplet_multimodal import (
+    multimodal_triplet_semihard_loss_img_to_text,
+    multimodal_triplet_semihard_loss_text_to_img,
+    multimodal_triplet_semihard_loss_bidirectional,
+    multimodal_triplet_hard_loss_img_to_text,
+    multimodal_triplet_hard_loss_text_to_img,
+    multimodal_triplet_hard_loss_bidirectional,
+    MultimodalTripletSemihardLossImgToText,
+    MultimodalTripletSemihardLossTextToImg,
+    MultimodalTripletSemihardLossBidirectional,
+    MultimodalTripletHardLossImgToText,
+    MultimodalTripletHardLossTextToImg,
+    MultimodalTripletHardLossBidirectional
 )
 from tensorflow_addons.losses.quantiles import pinball_loss, PinballLoss
 
