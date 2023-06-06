@@ -609,7 +609,7 @@ class MultimodalTripletSemihardLossImgToText(LossFunctionWrapper):
         super().__init__(
             multimodal_triplet_semihard_loss_img_to_text,
             name=name,
-            reduction=tf.keras.losses.Reduction.NONE,
+            reduction=tf.keras.losses.Reduction.AUTO,
             margin=margin,
             distance_metric=distance_metric,
         )
@@ -646,7 +646,7 @@ class MultimodalTripletSemihardLossTextToImg(LossFunctionWrapper):
         super().__init__(
             multimodal_triplet_semihard_loss_text_to_img,
             name=name,
-            reduction=tf.keras.losses.Reduction.NONE,
+            reduction=tf.keras.losses.Reduction.AUTO,
             margin=margin,
             distance_metric=distance_metric,
         )
@@ -685,7 +685,7 @@ class MultimodalTripletSemihardLossBidirectional(LossFunctionWrapper):
         super().__init__(
             multimodal_triplet_semihard_loss_bidirectional,
             name=name,
-            reduction=tf.keras.losses.Reduction.NONE,
+            reduction=tf.keras.losses.Reduction.AUTO,
             margin=margin,
             lambda_1=lambda_1,
             lambda_2=lambda_2,
@@ -726,7 +726,7 @@ class MultimodalTripletHardLossImgToText(LossFunctionWrapper):
         super().__init__(
             multimodal_triplet_hard_loss_img_to_text,
             name=name,
-            reduction=tf.keras.losses.Reduction.NONE,
+            reduction=tf.keras.losses.Reduction.AUTO,
             margin=margin,
             soft=soft,
             distance_metric=distance_metric,
@@ -766,7 +766,7 @@ class MultimodalTripletHardLossTextToImg(LossFunctionWrapper):
         super().__init__(
             multimodal_triplet_hard_loss_text_to_img,
             name=name,
-            reduction=tf.keras.losses.Reduction.NONE,
+            reduction=tf.keras.losses.Reduction.AUTO,
             margin=margin,
             soft=soft,
             distance_metric=distance_metric,
@@ -807,7 +807,7 @@ class MultimodalTripletHardLossBidirectional(LossFunctionWrapper):
         super().__init__(
             multimodal_triplet_hard_loss_bidirectional,
             name=name,
-            reduction=tf.keras.losses.Reduction.NONE,
+            reduction=tf.keras.losses.Reduction.AUTO,
             margin=margin,
             lambda_1=lambda_1,
             lambda_2=lambda_2,
